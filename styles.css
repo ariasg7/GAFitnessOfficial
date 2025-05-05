@@ -18,11 +18,13 @@ body {
 
 /* Header */
 header {
-  background-color: #171717;
-  padding: 20px 0;
-  position: sticky;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  position: fixed; /* Fix navbar to the top */
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
+  padding: 10px 20px;
 }
 
 nav a {
@@ -92,10 +94,17 @@ nav a:hover {
 .service {
   margin-bottom: 30px;
 }
-
+/*
 .service h3 {
   font-size: 2rem;
   margin-bottom: 10px;
+}*/
+.contact h2 {
+  margin-bottom: 5px;
+}
+
+.contact h3 {
+  margin-bottom: 20px;
 }
 
 .service p {
