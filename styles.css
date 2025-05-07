@@ -1,4 +1,5 @@
 /* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -230,10 +231,37 @@ footer a:hover {
   line-height: 1.5;
 }
 .about-img-wrapper {
-  width: 300px;           /* Portrait width */
-  height: 400px;          /* Portrait height */
-  overflow: hidden;       /* Hides overflow from the image */
-  border-radius: 20px;    /* Rounded corners */
+  position: relative;
+  width: 340px;
+  height: 420px;
+}
+
+.about-img-group img, .about-img-wrapper img {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: all 0.4s ease-in-out; /* Smooth transition */
+}
+.img-main {
+  transform: translate(45px, 0);
+  z-index: 3;
+}
+
+.img-secondary {
+  transform: translate(0px, 20px);
+  z-index: 2;
+}
+
+.img-tertiary {
+  transform: translate(90px, -10px);
+  z-index: 1;
+}
+/* Optional hover effect for interactivity */
+.about-img-group img:hover {
+  transform: scale(1.03);
 }
 
 
